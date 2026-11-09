@@ -1,0 +1,143 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6;
+    color: #222;
+}
+
+header {
+    background-color: #202938;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+header p {
+    margin-top: 10px;
+}
+
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+p {
+    line-height: 1.5;
+}
+
+.botoes {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+button {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+.disciplina {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-top: 12px;
+    border-radius: 8px;
+}
+
+.disciplina p {
+    margin-top: 8px;
+}
+
+.status {
+    font-weight: bold;
+}
+
+.aprovada {
+    color: #15803d;
+}
+
+.liberada {
+    color: #2563eb;
+}
+
+.bloqueada {
+    color: #dc2626;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+#aviso-optativas {
+    margin-top: 15px;
+    color: #dc2626;
+}
+
+#observacao {
+    background-color: #e5e7eb;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+}
+
+.escondido {
+    display: none;
+}
+
+#voltar {
+    margin-bottom: 25px;
+}
+
+@media (max-width: 600px) {
+    main {
+        padding: 12px;
+    }
+
+    .botoes {
+        flex-direction: column;
+    }
+
+    header {
+        padding: 25px 12px;
+    }
+}
+    

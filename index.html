@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Planejador de Estudos SSI</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Planejador de Estudos SSI</h1>
+        <p>Organize sua vida acadêmica</p>
+    </header>
+
+    <main>
+
+        <section class="inicio">
+            <h2>Bem-vindo ao planejador!</h2>
+
+            <p>
+                Consulte a matriz curricular e descubra
+                quais disciplinas estão liberadas.
+            </p>
+
+            <div class="botoes">
+                <button onclick="entrarAluno()">
+                    Sou aluno IFRS
+                </button>
+
+                <button onclick="entrarVisitante()">
+                    Sou visitante
+                </button>
+            </div>
+        </section>
+
+        <section id="area-aluno" class="escondido">
+
+            <h2>Minhas aprovações</h2>
+
+            <p>
+                Marque as disciplinas que você já concluiu
+                com aprovação.
+            </p>
+
+            <p id="total-aprovadas"></p>
+
+        </section>
+
+        <section id="matriz" class="escondido">
+
+            <h2>Grade curricular</h2>
+
+            <div id="lista-disciplinas"></div>
+
+        </section>
+
+        <section id="optativas" class="escondido">
+
+            <h2>Escolha das optativas</h2>
+
+            <label for="optativa1">Optativa I:</label>
+            <select id="optativa1" onchange="atualizarOptativas()">
+                <option value="">Selecione uma opção</option>
+            </select>
+
+            <label for="optativa2">Optativa II:</label>
+            <select id="optativa2" onchange="atualizarOptativas()">
+                <option value="">Selecione uma opção</option>
+            </select>
+
+            <p id="aviso-optativas"></p>
+
+        </section>
+
+        <section id="avisos" class="escondido">
+
+            <h2>Componentes especiais</h2>
+
+            <p>ENADE: componente obrigatório do 6º semestre.</p>
+
+            <p>
+                Atividades Complementares: exigem 70 horas
+                para concluir o curso.
+            </p>
+
+        </section>
+
+        <p id="observacao" class="escondido">
+            LIBERADA indica apenas que os pré-requisitos
+            foram atendidos. Oferta, vagas e horários
+            não são avaliados pelo sistema.
+        </p>
+
+        <button id="voltar" class="escondido" onclick="voltarInicio()">
+            Voltar ao início
+        </button>
+
+    </main>
+
+    <footer>
+        <p>Projeto acadêmico - Planejador de Estudos SSI</p>
+    </footer>
+
+</body>
+
+</html>
